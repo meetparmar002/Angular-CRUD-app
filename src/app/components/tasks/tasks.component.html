@@ -1,0 +1,11 @@
+<app-task-item 
+*ngFor='let task of tasks'
+[task]='task'
+(onDeleteTask)='deleteTask(task)'
+(onToggleReminder)='toggleReminder(task)'
+></app-task-item>
+
+<!-- <div *ngFor='let task of tasks'>
+    <h3>{{task.text}}</h3>
+    <p>{{task.day}}</p>
+</div> -->
